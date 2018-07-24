@@ -605,3 +605,103 @@ line-height: 1.8;
   }
 }
 /* End Media Query */
+
+.contact-me ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    padding-top: 5060px;
+padding-left: 200px;
+}
+.contact-me ul li
+{
+    list-style: none;
+    float:left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    color: #262626;
+    font-size: 50px;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+.contact-me ul li:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: #ccc;
+    z-index: -1;
+    border-radius: 50%
+}
+.contact-me ul li:after{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    background: rgba(225,225,225, .3);
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+        
+}
+.contact-me ul li:hover:before{
+    left: 0;
+    transform: scale(.9);
+}
+.contact-me ul li:hover:after{
+    left: 0;
+    transform: scale(.9);
+}
+.contact-me ul li:nth-child(1):before{
+    background:#3b5999;
+}
+.contact-me ul li .fa{
+    transition: .5s ease-in-out; 
+}
+.contact-me ul li:hover .fa {
+    color: #fff
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
