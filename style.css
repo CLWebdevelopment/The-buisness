@@ -24,6 +24,11 @@ body {
   /*background-color: #fff;*/
   box-sizing: border-box;
 }
+.container3{
+    
+    height: 400px;
+    
+}
 
 .clearfix {
   clear: both;
@@ -488,13 +493,14 @@ line-height: 1.8;
 .footer .footer-folat{
   float: left;
   width: 50%;
-  text-align: center;
+  text-align: float-left;
+
 }
 .footer ul{
   list-style: none;
   padding-left: 0;
   text-align: center;
-  /*margin-top: 10px;*/
+  margin-top: 10px;*/
 }
 
 .footer ul li{
@@ -607,14 +613,14 @@ line-height: 1.8;
 /* End Media Query */
 
 .contact-me ul{
-    margin: 0;
+    margin: center;
     padding: 0;
     position: absolute;
     top: 50%;
-
+    
     transform: translate(-50%, -50%);
-    padding-top: 5060px;
-padding-left: 200px;
+    padding-top: 5000px;
+padding-left: 300px;
 }
 .contact-me ul li
 {
@@ -625,7 +631,7 @@ padding-left: 200px;
     height: 100px;
     line-height: 100px;
     text-align: center;
-    background: #fff;
+    background: white;
     border-radius: 50%;
     position: relative;
     overflow: hidden;
@@ -633,6 +639,7 @@ padding-left: 200px;
     font-size: 50px;
     z-index: 1;
     transition: .5s ease-in-out;
+    
 }
 .contact-me ul li:before{
     content: "";
@@ -641,7 +648,7 @@ padding-left: 200px;
     position: absolute;
     top: 0;
     left: -100%;
-    background: #ccc;
+    background: black;
     z-index: -1;
     border-radius: 50%
 }
@@ -668,18 +675,128 @@ padding-left: 200px;
 .contact-me ul li:nth-child(1):before{
     background:#3b5999;
 }
+.contact-me ul li:nth-child(2):before{
+    background:#0077B5;
+}
+.contact-me ul li:nth-child(3):before{
+    background:#55acee;
+}
 .contact-me ul li .fa{
     transition: .5s ease-in-out; 
 }
 .contact-me ul li:hover .fa {
     color: #fff
 }
+.contact-me ul a{
+    color: black;
+}
+.text ul{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+    padding-top: 2000px;
+padding-left: 300px;
+}
+.text ul li
+{
+    list-style: none;
+    float:left;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    color: #262626;
+    font-size: 50px;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+.text ul li:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background: #ccc;
+    z-index: -1;
+    border-radius: 50%
+}
+.text ul li:after{
+    content: '';
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    background: rgba(225,225,225, .3);
+    transition: .5s ease-in-out;
+    transition-delay: .3s;
+        
+}
+.text ul li:hover:before{
+    left: 0;
+    transform: scale(.9);
+}
+.text ul li:hover:after{
+    left: 0;
+    transform: scale(.9);
+}
+.text ul li:nth-child(1):before{
+    background:#3b5999;
+}
+.text ul li:nth-child(2):before{
+    background:#0077B5;
+}
+.text ul li:nth-child(3):before{
+    background:#55acee;
+}
+.text ul li .fa{
+    transition: .5s ease-in-out; 
+}
+.text ul li:hover .fa {
+    color: #fff
+}
+.text ul a{
+    color: black;
+}
 
 
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
 
+marquee {
+  height: 300px;
+  width: 80%;
+  max-width: 100%;
+  padding-bottom: 530px;
+}
 
+img {
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
 
-
+.form-btn{
+    background: none;
+  border: 2px solid #2dcc70;
+  padding: 10px 30px;
+  color: #2dcc70;
+  font-weight: bold;
+}
+}
 
 
 
